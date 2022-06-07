@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Exercicio1Q">
+
+    <EditText
+        android:id="@+id/editTextTextPersonName6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="38dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="@string/exercicio_1Q"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="7dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="@string/ch4_o2"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="110dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="35dp"
+        android:editable="false"
+        android:text="@string/pontuacao_10Q"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup5"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName7"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName7" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginBottom="164dp"
+        app:layout_constraintBottom_toTopOf="@+id/responderQ"
+        app:layout_constraintStart_toStartOf="@+id/respostaQ"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RadioButton
+            android:id="@+id/radio1Q"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/h2o_c2"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radio2Q"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/h_c_o_o_h"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radio3Q"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/co2_h2o"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/respostaQ"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="15dp"
+        android:editable="false"
+        app:layout_constraintBottom_toBottomOf="@+id/responderQ"
+        app:layout_constraintEnd_toStartOf="@+id/responderQ"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup5" />
+
+    <Button
+        android:id="@+id/responderQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="47dp"
+        android:text="@string/responder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/respostaQ"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup5" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaEntrar">
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="66dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="@string/entrar_na_conta"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/TextEmailT2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/TextEmailT2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="55dp"
+        android:ems="10"
+        android:hint="@string/emailT2"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/TextPasswordT2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/TextPasswordT2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="136dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/palavra_passeT2"
+        android:inputType="textPassword"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/registarBtnT2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextEmailT2" />
+
+    <Button
+        android:id="@+id/registarBtnT2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="51dp"
+        android:text="@string/registarT2"
+        app:layout_constraintBottom_toTopOf="@+id/entrarBtnT2"
+        app:layout_constraintStart_toStartOf="@+id/entrarBtnT2"
+        app:layout_constraintTop_toBottomOf="@+id/TextPasswordT2" />
+
+    <Button
+        android:id="@+id/entrarBtnT2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="139dp"
+        android:text="@string/entrarT2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registarBtnT2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

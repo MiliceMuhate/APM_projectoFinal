@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Exercicio1Fisisca">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="124dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginBottom="44dp"
+        android:editable="false"
+        android:text="@string/pontuacao_10F"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName13" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName12"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="@string/exercicio_1F"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName13"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="@string/o_que_significa_forca_centripeta"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName12"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/respostaF"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="25dp"
+        android:editable="false"
+        app:layout_constraintBottom_toBottomOf="@+id/responderF"
+        app:layout_constraintEnd_toStartOf="@+id/responderF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="124dp"
+        app:layout_constraintBottom_toTopOf="@+id/responderF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+        <RadioButton
+            android:id="@+id/radio1F"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/forca_que_tende_para_o_centro"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radio3F"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/forca_que_tende_a_fugar"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radio2F"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/forca_massa"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/responderF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="46dp"
+        android:text="@string/responderF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/respostaF"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+</androidx.constraintlayout.widget.ConstraintLayout>
